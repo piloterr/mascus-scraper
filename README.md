@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.mascus.fr/travaux-publics/broyeur-dechets/doppstadt-ak-435-profi/hocmgmfi.html",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -207,7 +207,7 @@ response = requests.get(
     params={
         "query": "https://www.mascus.be/bouw/graafmachines/be,country.html",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
